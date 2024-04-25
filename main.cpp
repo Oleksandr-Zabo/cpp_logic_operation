@@ -12,7 +12,8 @@ int main()
 
     result = (year % 400 == 0) || ((year % 4 == 0) && (year % 100 != 0));
 
-    cout << result +365;
+    cout << result +365<<endl;
+    system("pause");
 
     return 0;
 }
