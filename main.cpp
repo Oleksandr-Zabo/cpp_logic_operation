@@ -10,12 +10,6 @@ int main()
     cout << "Enter year: ";
     cin >> year;
 
-
-
-
-    result = year / 100;
-    result = year - result;
-
     result = (year % 400 == 0) || ((year % 4 == 0) && (year % 100 != 0));
 
     cout << result +365;
