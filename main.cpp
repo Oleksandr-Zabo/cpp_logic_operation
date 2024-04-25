@@ -3,7 +3,22 @@ using namespace std;
 
 int main()
 {
-	cout << "Hello world"<<endl;
-	system("pause");
-	return 0;
+	// +, -, *, /, %, ++, --
+	// &&(and), ||(or), !(not)
+    int year, result;
+
+    cout << "Enter year: ";
+    cin >> year;
+
+
+
+
+    result = year / 100;
+    result = year - result;
+
+    result = (year % 400 == 0) || ((year % 4 == 0) && (year % 100 != 0));
+
+    cout << result +365;
+
+    return 0;
 }
